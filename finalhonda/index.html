@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Quick Fix Video Player</title>
+</head>
+<body>
+<div id="false-body">
+  <p id="initial-play-button" onclick="initialPlayButtonPlay()"> QuickFix Video Player </p>
+  <div id="video-player">
+    <div id="video-holder">
+      <video id="video-one" src="videos/light side final.mp4" webkit-playsinline playsinline preload="auto"></video>
+      <video id="video-two" src="videos/dark side final.mp4" webkit-playsinline playsinline preload="auto" muted></video>
+    </div>
+    <div id="control-bar">
+      <p id="play-button" onClick="videoPlayer.togglePlayPause()"> Play </p>
+      <p id="switch-button" onClick="videoPlayer.toggleSwitchVideos()"> Switch </p>
+      <input class="slider" id="seek-slider" type="range" min="0" max="100" value="0" step="1">
+    </div>
+  </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
